@@ -3,3 +3,8 @@
     const modalVideo = document.getElementById('modal-video');
     const closeBtn = document.querySelector('.close-modal');
     const projectItems = document.querySelectorAll('.project-item');
+
+    projectItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const videoSrc = this.getAttribute('data-video');
+            console.log(" ", videoSrc);
