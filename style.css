@@ -137,3 +137,14 @@ body {
     font-size: 14px;
 }
 
+@media (max-width: 768px) {
+    .hero, .about-grid { grid-template-columns: 1fr; }
+    .hero-title { font-size: 18vw; }
+    .large-p { font-size: 24px; }
+    .project-name { font-size: 24px; }
+}
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
