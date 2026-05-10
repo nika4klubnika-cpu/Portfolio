@@ -8,3 +8,12 @@
         item.addEventListener('click', function() {
             const videoSrc = this.getAttribute('data-video');
             console.log(" ", videoSrc);
+
+             if (videoSrc) {
+                modalVideo.querySelector('source').src = videoSrc;
+                modalVideo.load();
+                modal.style.display = 'block';
+                modalVideo.play();
+            }
+        });
+    });
