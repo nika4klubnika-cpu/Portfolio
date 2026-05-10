@@ -98,3 +98,42 @@ body {
 
 .about-image img { width: 100%; filter: grayscale(1); }
 
+.project-list { margin-top: 40px; }
+
+.project-item {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-item:hover { padding-left: 20px; background: var(--accent); }
+
+.project-num { font-size: 12px; width: 60px; }
+.project-name {
+    font-family: var(--font-serif);
+    font-size: 3vw;
+    flex-grow: 1;
+}
+
+.footer {
+    padding: 150px 0 60px;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: var(--font-serif);
+    font-size: 6vw;
+    margin-bottom: 60px;
+}
+
+.footer-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 14px;
+}
+
