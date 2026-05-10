@@ -154,3 +154,30 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--text);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--bg);
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        z-index: 100;
+    }
+    .nav-links.show { display: flex; }
+}
