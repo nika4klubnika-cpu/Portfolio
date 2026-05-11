@@ -1,4 +1,6 @@
-
+    window.onload = function() {
+    console.log("Strona i skrypt załadowane");
+    
     const modal = document.getElementById('video-modal');
     const modalVideo = document.getElementById('modal-video');
     const closeBtn = document.querySelector('.close-modal');
